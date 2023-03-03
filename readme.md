@@ -1,4 +1,4 @@
-​		这是一个学习nginx内存池和SGI STL内存池的项目，对代码进行了详细的注释，发现了一些可能存在的小问题并给出了解决思路。欢迎大家阅读交流。
+		这是一个学习nginx内存池和SGI STL内存池的项目，对代码进行了详细的注释，发现了一些可能存在的小问题并给出了解决思路。欢迎大家阅读交流。
 
 # ngx_mem_pool改进
 
@@ -34,7 +34,7 @@ struct ngx_pool_large_s {
 };
 ```
 
-![ngx](D:\我的资料\项目\mem_pool\ngx.png)
+![image](https://github.com/SuNaKi/mem_pool/blob/master/ngx.png)
 
 nginx大块内存分配 -> 内存释放ngx_free函数
 nginx小块内存分配 -> 没有提供任何的内存释放函数，实际上，从小块内存的分配方式来看（直接通过last指针偏移来分配内存)，它也没法进行小块内存的回收。
@@ -94,7 +94,7 @@ static _Obj* volatile _S_free_list[_NFREELISTS];	//  16个元素的数组
 _Obj* volatile* __my_free_list 					   // 指向数组中的对应元素
 ```
 
-![SGI_STL](D:\我的资料\项目\mem_pool\SGI_STL.png)
+![image](https://github.com/SuNaKi/mem_pool/blob/master/SGI_STL.png)
 
 ## SGI STL二级空间配置器内存池的实现优点:
 
