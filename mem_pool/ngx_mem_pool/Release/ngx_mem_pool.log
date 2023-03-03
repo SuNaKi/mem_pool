@@ -1,0 +1,4 @@
+﻿  ngx_mem_pool.cpp
+  testngnixpoolcpp.cpp
+C:\Users\戴健飞\source\repos\ngx_mem_pool\ngx_mem_pool\testngnixpoolcpp.cpp(51,5): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\戴健飞\source\repos\ngx_mem_pool\ngx_mem_pool\testngnixpoolcpp.cpp(52,17): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
